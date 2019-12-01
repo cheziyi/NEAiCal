@@ -1,0 +1,12 @@
+{
+	"name": "nea-ical",
+	"scripts": {
+		"build": "tsc",
+		"deploy": "npm run build && serverless deploy --region ap-southeast-1"
+	},
+	"dependencies": {
+		"@types/aws-lambda": "^8.10.36",
+		"@types/node": "^12.12.14",
+		"typescript": "^3.7.2"
+	}
+}

@@ -1,0 +1,13 @@
+service: nea-ical
+
+provider:
+  name: aws
+	runtime: nodejs8.10
+
+functions:
+  forecast:
+    handler: dist/forecast.handler
+    events:
+      - http:
+          path: forecast
+          method: get
